@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        app:cardBackgroundColor="@color/cardViewColor"
+        app:cardCornerRadius="14dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageViewToDoDetail"
+                android:layout_width="80dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.5" />
+
+            <TextView
+                android:id="@+id/textViewToDoDetailName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="Urun Adi"
+                android:textColor="@color/textColorLight"
+                app:layout_constraintBottom_toTopOf="@+id/textViewToDoDetailWeight"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageViewToDoDetail"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewToDoDetailWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Agirlik"
+                android:textColor="@color/textColorLight2"
+                app:layout_constraintBottom_toTopOf="@+id/textViewToDoDetailNote"
+                app:layout_constraintStart_toEndOf="@+id/imageViewToDoDetail"
+                app:layout_constraintTop_toBottomOf="@+id/textViewToDoDetailName" />
+
+            <TextView
+                android:id="@+id/textViewToDoDetailPiece"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="TextView"
+                android:textColor="@color/textColorLight2"
+                app:layout_constraintBottom_toTopOf="@+id/textViewToDoDetailNote"
+                app:layout_constraintStart_toEndOf="@+id/textViewToDoDetailWeight"
+                app:layout_constraintTop_toBottomOf="@+id/textViewToDoDetailName" />
+
+            <TextView
+                android:id="@+id/textViewToDoDetailNote"
+                android:layout_width="0dp"
+                android:layout_height="19dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/textColorLight"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageViewToDoDetail"
+                app:layout_constraintTop_toBottomOf="@+id/textViewToDoDetailWeight" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</layout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/itemCart"
+        android:icon="@drawable/ic_baseline_shopping_cart_checkout_24"
+        android:title="Sepet" />
+    <item
+        android:id="@+id/itemTodoList"
+        android:icon="@drawable/todo_list"
+        android:title="Liste" />
+    <item
+        android:id="@+id/itemTodoListComplated"
+        android:icon="@drawable/todo_complated"
+        android:title="Tamamlanmış Listeler" />
+</menu>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">WebApiApp</string>
+    <string name="nav_open">Open navigation</string>
+    <string name="nav_close">Close navigation</string>
+    <string name="txt_my_string">
+        <font fgcolor='#B7C4CF'> Hesabın yok mu? </font> Kayıt Ol
+    </string>
+</resources>
